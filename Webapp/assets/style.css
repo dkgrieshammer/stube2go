@@ -1,0 +1,125 @@
+/*=====
+Interactive Prototyping Course 2013
+Koeln International School of Design
+Made with love by dkgrieshammer, janno, ...
+
+
+structure
+-------------------------------
+1. Includes & Hacks
+2. Body
+3. Header / #header
+4. Navigation / #navbar
+5. Content / #content
+6. Left column / #leftcolumn
+7. Right column / #rightcolumn
+8. Sidebar / #sidebar
+9. RSS / #rss
+10. Search / #search
+11. Boxes / .box
+12. Sideblog / #sideblog
+13. Advertisements / .ads
+14. Footer / #footer
+--------------------------------
+
+***/
+
+/* 1. Includes
+----------------------------------------------------------------------------- */
+/*Include the great Font-Awesome-Icons*/
+/* @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+} */
+
+/* Nicer Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+
+
+/* 2. Body
+----------------------------------------------------------------------------- */
+
+/* 3. Header
+----------------------------------------------------------------------------- */
+
+/* 4. Navigation
+----------------------------------------------------------------------------- */
+
+
+/* 5. Content
+----------------------------------------------------------------------------- */
+.middlebox {
+  height: 100%;
+  position: relative;
+  margin-left: 0px;
+}
+
+    #open_message h3, #open_message h4 {
+      text-align: center;
+    }
+
+    .middlebox p {
+      line-height: 1.4em;
+      /*text-align: left;*/
+    }
+
+    #cup {
+        margin-top: 50pt;
+        text-align: center;
+        z-index: 10;
+        position: relative;
+        height: 180px;
+        margin-left: -47px;
+    }
+    
+    div#red_box {
+      display: block;
+      width: 100px;
+      height: 0px;
+      /*background-color: #7a4a17;*/
+      background-color: red;
+      position: absolute;
+      
+      left: -38px;
+      /*left: 0px;*/
+      bottom: 119px;
+      margin-left: 50%;
+      /*animation:myfirst 1s forwards;*/
+      /*-webkit-animation:myfirst 1s forwards; /* Safari and Chrome */*/
+    }
+
+    #open_message {
+      margin-top: 10px;
+      line-height: 25px;
+    }
+    
+    @keyframes myfirst
+    {
+        from {top:120px; height: 20px;}
+        to {top:80px; height: 60px;}
+    }
+    
+    @-webkit-keyframes myfirst /* Safari and Chrome */
+    {
+        from {top:120px; height: 20px;}
+        to {top:80px; height: 60px;}
+    }
